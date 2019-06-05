@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F50F7B0-C640-4DB3-8B7C-1A3DD113CB3B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nhom04_DiaDiemDuLich</RootNamespace>
+    <AssemblyName>Nhom04_DiaDiemDuLich</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUS\ChuyenBayBUS.cs" />
+    <Compile Include="BUS\DiaDiemDuLichBUS.cs" />
+    <Compile Include="BUS\KhachHangBUScs.cs" />
+    <Compile Include="BUS\KhachSanBUS.cs" />
+    <Compile Include="BUS\PhongBUS.cs" />
+    <Compile Include="BUS\TourDuLichBUS.cs" />
+    <Compile Include="BUS\VeBUS.cs" />
+    <Compile Include="DAO\BinhLuanDAO.cs" />
+    <Compile Include="DAO\ChuyenBayDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\DemoDAO.cs" />
+    <Compile Include="DAO\DiaDiemDuLichDAO.cs" />
+    <Compile Include="DAO\KhachSanDAO.cs" />
+    <Compile Include="DAO\PhongDAO.cs" />
+    <Compile Include="DAO\TourDuLichDAO.cs" />
+    <Compile Include="DAO\VeDAO.cs" />
+    <Compile Include="DTO\BinhLuanDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DTO\ChuyenBayDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DTO\DiaDiemDuLichDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DTO\KhachHangDTO.cs" />
+    <Compile Include="DTO\KhachSanDTO.cs" />
+    <Compile Include="DTO\PhongDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DTO\ThongTinTimKiemDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DTO\TourDuLichDTO.cs" />
+    <Compile Include="DTO\VeDTO.cs" />
+    <Compile Include="GUI\FormBinhLuanDiaDiemDuLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormBinhLuanDiaDiemDuLich.Designer.cs">
+      <DependentUpon>FormBinhLuanDiaDiemDuLich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControlChucNangUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControlChucNangUser.Designer.cs">
+      <DependentUpon>UserControlChucNangUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControlFormChonTaiKhoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControlFormChonTaiKhoan.Designer.cs">
+      <DependentUpon>UserControlFormChonTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControlFormKetNoi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControlFormKetNoi.Designer.cs">
+      <DependentUpon>UserControlFormKetNoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControlMenuAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControlMenuAdmin.Designer.cs">
+      <DependentUpon>UserControlMenuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FormBinhLuanDiaDiemDuLich.resx">
+      <DependentUpon>FormBinhLuanDiaDiemDuLich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControlChucNangUser.resx">
+      <DependentUpon>UserControlChucNangUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControlFormChonTaiKhoan.resx">
+      <DependentUpon>UserControlFormChonTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControlFormKetNoi.resx">
+      <DependentUpon>UserControlFormKetNoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControlMenuAdmin.resx">
+      <DependentUpon>UserControlMenuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConnectDB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beaches-66a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\du.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottem_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Group-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin-min-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_bottom_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_bottom_right_90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\du_pink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\du_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\du_yellow_180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\du_pink_180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\du1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\VungTimKiem.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

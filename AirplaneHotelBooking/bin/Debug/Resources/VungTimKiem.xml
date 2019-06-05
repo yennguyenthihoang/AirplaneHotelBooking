@@ -1,0 +1,39 @@
+﻿<DiaDiemDuLich>
+	<QuocGia Ten="Nhật Bản">
+		<ThanhPho>Tokyo</ThanhPho>
+		<ThanhPho>Kyoto</ThanhPho>			
+		<ThanhPho>Hiroyama</ThanhPho>		
+		<ThanhPho>Kobe</ThanhPho>		
+		<ThanhPho>Koriyama</ThanhPho>		
+	</QuocGia>
+	
+	<QuocGia Ten="Hàn Quốc">
+		<ThanhPho>Seoul</ThanhPho>
+		<ThanhPho>Choenamn</ThanhPho>			
+		<ThanhPho>Gunsan</ThanhPho>			
+	</QuocGia>
+	
+	<QuocGia Ten="Việt Nam">
+		<Vung Ten="Miền Bắc">
+			<ThanhPho>Hà Nội</ThanhPho>
+			<ThanhPho>Lào Cai</ThanhPho>
+			<ThanhPho>Lạng Sơn</ThanhPho>
+			<ThanhPho>Quảng Ninh</ThanhPho>			
+		</Vung>
+		<Vung Ten="Miền Trung">
+			<ThanhPho>Đà Nẵng</ThanhPho>
+			<ThanhPho>Quy Nhơn</ThanhPho>
+			<ThanhPho>Bình Định</ThanhPho>
+			<ThanhPho>Huế</ThanhPho>
+			<ThanhPho>Quảng Bình</ThanhPho>
+		</Vung>
+		<Vung Ten="Miền Nam">
+			<ThanhPho>Bến Tre</ThanhPho>
+			<ThanhPho>TP.HCM</ThanhPho>
+			<ThanhPho>Long An</ThanhPho>
+			<ThanhPho>An Giang</ThanhPho>
+			<ThanhPho>Vũng Tàu</ThanhPho>
+		</Vung>	
+	</QuocGia>
+	
+</DiaDiemDuLich>
